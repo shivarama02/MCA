@@ -8,6 +8,6 @@
 5. First n multiples
 6. Sum of First 100 even Numbers
 7. Factorial of Number
-8. Nummber of Digits in a Number
+8. Number of Digits in a Number
 9. To check whether a year is leap year or not
 10. To find roots of a quadratic equation
