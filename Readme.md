@@ -17,10 +17,9 @@ The following people have contributed to this project. Thank you all for your ha
 <br>
 <br>
 
-<a href="https://github.com/yadhukrishnx/MCA/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yadhukrishnx/MCA" />
+<a href="https://github.com/deep-kH/MCA/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=deep-kH/MCA" />
 </a>
-
 
 
 
