@@ -20,14 +20,13 @@ int IsEmpty()
 int IsFull()
 {
     temp = head;
-    if (IsEmpty() != 1)
+    if (IsEmpty() != 0)
     {
         for (temp = head, count = 0; temp != NULL; temp = temp->Next)
         {
             count++;
         }
     }
-
     if (count == max)
         return 0;
     else
