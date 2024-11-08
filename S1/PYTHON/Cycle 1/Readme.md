@@ -2,7 +2,7 @@
 
 ### CO 1
 1. [Area and Perimeter of a Circle](01_area_perimeter_circle.py)     
-2. [Swap 2 Numbers](2_swap2num.py))
+2. [Swap 2 Numbers](2_swap2num.py)
 3. [Largest of Three Numbers](3_Lof3.py)
 4. [Arithematic Operation](4_ArithemeaticOps.py)
 5. [First n multiples](5_firstn.py)
