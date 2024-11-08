@@ -19,8 +19,8 @@ Explore the different sections of the repository by clicking the links below:
 
 We’re committed to building a collaborative, welcoming community, and we’re thrilled to have each of you on board. Thank you all for your dedication and hard work in building and improving this project together! 😊
 
-<a href="https://github.com/deep-kH/MCA/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=deep-kH/MCA" />
+<a href="https://github.com/bhavanatheruvath/MCA/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=bhavanatheruvath/MCA" />
 </a>
 
 ---
