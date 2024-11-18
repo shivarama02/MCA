@@ -1,0 +1,23 @@
+1. GCD
+2. Exchange first and last char in string
+3. Fscto
+4. Fibinocci of n terms
+5. char freq in a string
+6. add ing at the end of a given string 
+    if already ing add ly
+7. Display given pyramid with step number accepted from the user : 
+        1
+        2   4
+        3   6   9
+        4   8   12  16
+8. Construct the pattern using nested loops:
+    *
+    **
+    ***
+    ****
+    *****
+    ****
+    ***
+    **
+    *
+9. Single string from teo string swapping char at pos 1
