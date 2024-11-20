@@ -1,0 +1,81 @@
+.full {
+    width: 60%;
+    position: absolute;
+    top: 2%;
+    left: 20%;
+    border: 2px solid rgba(156, 201, 88, 0.661);
+}
+
+.heading {
+    background-color: rgba(182, 171, 155, 0.474);
+    color: rgb(19, 54, 87);
+    opacity: 50%;
+}
+
+.Img {
+    background-color: rgba(33, 140, 104, 0.222);
+    height: 300px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(200, 138, 58, 0.277);
+    color: rgb(83, 108, 83);
+}
+
+.wht {
+    width: 49%;
+    border: 2px double rgba(0, 0, 0, 0.131);
+    padding-left: 1%;
+}
+
+.prop {
+    width: 49%;
+    border: 2px double rgba(0, 0, 0, 0.165);
+}
+
+.pucha {
+    position: absolute;
+    width: 797px;
+    height: 289px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px
+}
+
+
+#cat {
+    animation: per;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+
+#poocha {
+    animation: per2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes per {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes per2 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}

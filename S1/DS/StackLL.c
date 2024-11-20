@@ -19,10 +19,10 @@ int IsEmpty()
 
 int IsFull()
 {
-    temp = head;
+    temp = top;
     if (IsEmpty() != 0)
     {
-        for (temp = head, count = 0; temp != NULL; temp = temp->Next)
+        for (temp = top, count = 0; temp != NULL; temp = temp->Next)
         {
             count++;
         }
@@ -38,6 +38,8 @@ void push()
     printf("Enter the Data to be Pushed : ");
     new = (struct Node *)malloc(sizeof(struct Node));
     scanf("%d", &new->data);
+    if (new == NULL)
+        printf("alloc error");
     new->Next = NULL;
     if (IsEmpty() == 0)
     {
@@ -51,7 +53,7 @@ void push()
     }
     else
     {
-        top->Next = new;
+        new->Next = top;
         top = new;
         count++;
     }
@@ -65,16 +67,8 @@ void pop()
     }
     else
     {
-        for (temp = head; temp != top; temp = temp->Next)
-        {
-            if (temp->Next == top)
-            {
-                top = temp;
-                temp = temp->Next;
-                top->Next = NULL;
-                break;
-            }
-        }
+        temp = top;
+        top = temp->Next;
         free(temp);
         count--;
     }
@@ -86,7 +80,7 @@ void display()
         printf("Error : Stack UnderFlow !");
     else
     {
-        for (temp = head; temp != NULL; temp = temp->Next)
+        for (temp = top; temp != NULL; temp = temp->Next)
         {
             printf("%d\t", temp->data);
         }
@@ -100,41 +94,49 @@ void main()
     scanf("%d", &max);
     while (1)
     {
-        printf("\n1. Display the Stack\n2. Push Operation\n3. Pop Operation\n4. Checking Overflow\n5. Checking Underflow\n6. Display Top Element\n7. Display Number of Elements in the Stack\nChoose : ");
+        printf("\n0. Exit\n1. Display the Stack\n2. Push Operation\n3. Pop Operation\n4. Checking Overflow\n5. Checking Underflow\n6. Display Top Element\n7. Display Number of Elements in the Stack\nChoose : ");
         scanf("%d", &choose);
-        switch (choose)
+        if (choose == 0)
         {
-        case 1:
-            display();
+            printf("!! EXITING !!");
             break;
+        }
+        else
+        {
+            switch (choose)
+            {
+            case 1:
+                display();
+                break;
 
-        case 2:
-            push();
-            break;
-        case 3:
-            pop();
-            break;
-        case 4:
-            if (IsFull() == 0)
-                printf("Stack is in Overflow Condition");
-            else
-                printf("The Stack is Not Full");
-            break;
-        case 5:
-            if (IsEmpty() == 0)
-                printf("The Stack is in Underflow Condition");
-            else
-                printf("The Stack is not Empty");
-            break;
-        case 6:
-            printf("Top data in your Data : %d", top->data);
-            break;
-        case 7:
-            IsFull();
-            printf("Number of elements in your Stack is %d", count);
-            break;
-        default:
-            break;
+            case 2:
+                push();
+                break;
+            case 3:
+                pop();
+                break;
+            case 4:
+                if (IsFull() == 0)
+                    printf("Stack is in Overflow Condition");
+                else
+                    printf("The Stack is Not Full");
+                break;
+            case 5:
+                if (IsEmpty() == 0)
+                    printf("The Stack is in Underflow Condition");
+                else
+                    printf("The Stack is not Empty");
+                break;
+            case 6:
+                printf("Top data in your Data : %d", top->data);
+                break;
+            case 7:
+                IsFull();
+                printf("Number of elements in your Stack is %d", count);
+                break;
+            default:
+                break;
+            }
         }
     }
 }
