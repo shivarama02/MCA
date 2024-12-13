@@ -142,7 +142,7 @@
         
     </header>
     <marquee behavior="" direction="" style="color: brown;" scrollamount="3">
-        This site is currently under construction. Some content may be incomplete or inaccurate. Join us to contribute and make it better! 🚀 <a href="https://github.com/yadhukrishnx/MCA">Join Us</a>
+        This site is currently under construction. Some content may be incomplete or inaccurate. Join us to contribute and make it better! 🚀 <a href="https://github.com/deep-kH/MCA">Join Us</a>
     </marquee>
     
     <nav>
@@ -154,19 +154,19 @@
     <section id="directory">
         <h2>Repository Directory</h2>
         <div class="directory">
-            <a href="https://github.com/yadhukrishnx/MCA/tree/main/S1/DS">
+            <a href="https://github.com/deep-kH/MCA/tree/main/S1/DS">
             <div class="folder" >
                 <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Folder Icon">
                 <a>Data Structures</a>
             </div>
         </a>
-            <a href="https://github.com/yadhukrishnx/MCA/tree/main/S1/PYTHON">
+            <a href="https://github.com/deep-kH/MCA/tree/main/S1/PYTHON">
             <div class="folder" onclick="">
                 <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Folder Icon">
                 <a>Python Programming</a>
             </div>
         </a>
-        <a href="https://github.com/yadhukrishnx/MCA/tree/main/S1/WEB">
+        <a href="https://github.com/deep-kH/MCA/tree/main/S1/WEB">
             <div class="folder">
                 <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Folder Icon">
                 <a>Web Development</a>
@@ -186,7 +186,7 @@
         <h2>🌟 How to Contribute</h2>
         <p>We welcome all types of contributions. Here’s how you can get started:</p>
         <ol>
-            <li>Review our <a href="https://github.com/yadhukrishnx/MCA/CONTRIBUTING.md">Contributing Guidelines</a>.</li>
+            <li>Review our <a href="https://github.com/deep-kH/MCA/CONTRIBUTING.md">Contributing Guidelines</a>.</li>
             <li>Fork the repository and make a copy.</li>
             <li>Make your changes and test thoroughly.</li>
             <li>Create a pull request with a clear description.</li>
@@ -221,7 +221,7 @@
     <script>
         
         const contributorsContainer = document.getElementById('contributors-container');
-        fetch('https://api.github.com/repos/yadhukrishnx/MCA/contributors')
+        fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
             .then(response => response.json())
             .then(data => {
                 contributorsContainer.innerHTML = '';
@@ -244,7 +244,7 @@
             const leaderboardTable = document.getElementById('leaderboard').querySelector('tbody');
 
         // Fetch contributors from the GitHub API
-        fetch('https://api.github.com/repos/yadhukrishnx/MCA/contributors')
+        fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
             .then(response => response.json())
             .then(data => {
                 // Sort contributors by contributions (highest first)
@@ -255,6 +255,9 @@
 
                 // Populate the leaderboard
                 data.forEach((contributor, index) => {
+                    if (contributor.login === "yadhukrishnx") {
+                        return;
+                    }
                     const row = document.createElement('tr');
                     row.innerHTML = `
                         <td>${index + 1}</td>
