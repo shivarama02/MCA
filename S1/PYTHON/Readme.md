@@ -18,17 +18,17 @@ Lab Cycle
 14.	[Sort dictionary (ascending and descending)](14.dict.py)
 15.	[Merge two dictionaries](15.merge.py)
 16.	[GCD of 2 numbers](16.GCD.py)
-17.	[From a list, create a list removing all even numbers]
+17.	[From a list, create a list removing all even numbers]()
 18.	[Factorial using function](18.factorial.py)
 19.	[Fibonacci series of N terms](19.fibinacci.py)
 20.	[Character frequency in a string](20.charfreq.py)
 21.	[Add ‘ing’ at the end of a given string. If it already ends with ‘ing’, add ‘ly’](21.IngorLy.py)
 22.	[Construct the pattern using nested loop](22.numbpyramid.py)
-23.	[Graphics (packages)]
+23.	[Graphics (packages)]()
 24.	[Bank account (Constructor and Methods)](24.bank.py)
-25.	[Time (Private attributes, Overloading)]
-26.	[Publisher, Book, Python (Base class constructor invocation, method overriding)]
-27.	[Copy odd lines of one file to another]
-28.	[Read each row from a given csv file and print it as a list of strings]
-29.	[Read specific columns of a given CSV file and print their contents]
-30.	[Write a Python dictionary to a CSV file, read the CSV and display its content]
+25.	[Time (Private attributes, Overloading)]()
+26.	[Publisher, Book, Python (Base class constructor invocation, method overriding)]()
+27.	[Copy odd lines of one file to another]()
+28.	[Read each row from a given csv file and print it as a list of strings]()
+29.	[Read specific columns of a given CSV file and print their contents]()
+30.	[Write a Python dictionary to a CSV file, read the CSV and display its content]()
