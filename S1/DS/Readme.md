@@ -1,5 +1,3 @@
-# LAB CYCLE 
-
 Data Structures Lab 
 -------------------------
 Lab Cycle 1
