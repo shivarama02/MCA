@@ -9,7 +9,7 @@ Welcome to the **MCA Lab Repository** for the academic period **2024-2026**. Thi
 Explore the different sections of the repository by clicking the links below:
 
  **[Semester 1 (S1)](https://github.com/deep-kH/MCA/tree/main/S1)**: First semester lab assignments 
-- **[Data Structures (DS)](https://github.com/deep-kH/MCA/tree/main/S1/DS)**: Data Structures lab assignments
+- **[Data Structures (DS)](https://github.com/deep-kH/MCA/tree/main/S1/DS/Readme.md)**: Data Structures lab assignments
 - **[Python Programming](https://github.com/deep-kH/MCA/tree/main/S1/PYTHON)**: Python lab assignments
 - **[Web Development](https://github.com/deep-kH/MCA/tree/main/S1/WEB)**: Web development lab assignments
 
