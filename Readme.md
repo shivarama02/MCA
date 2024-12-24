@@ -10,8 +10,8 @@ Explore the different sections of the repository by clicking the links below:
 
  **[Semester 1 (S1)](https://github.com/deep-kH/MCA/tree/main/S1)**: First semester lab assignments 
 - **[Data Structures (DS)](https://github.com/deep-kH/MCA/tree/main/S1/DS/Readme.md)**: Data Structures lab assignments
-- **[Python Programming](https://github.com/deep-kH/MCA/tree/main/S1/PYTHON)**: Python lab assignments
-- **[Web Development](https://github.com/deep-kH/MCA/tree/main/S1/WEB)**: Web development lab assignments
+- **[Python Programming](https://github.com/deep-kH/MCA/tree/main/S1/PYTHON/Readme.md)**: Python lab assignments
+- **[Web Development](https://github.com/deep-kH/MCA/tree/main/S1/WEB/Readme.md)**: Web development lab assignments
 
 ---
 
