@@ -150,3 +150,15 @@ fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
     });
 
    
+    // Christmas Music
+    let specific = document.querySelector(".wishes");
+let audio = document.createElement("audio");
+audio.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+document.body.appendChild(audio);
+
+specific.onmouseover = () => {
+  audio.play();
+}
+specific.onmouseout = () => {
+    audio.pause();
+}
