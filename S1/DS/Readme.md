@@ -14,8 +14,8 @@ Lab Cycle 1
 Lab Cycle 2
 ---------------
 1.	[Binary Search Tree](BST.c)
-2.	[Prim's Algorithm]()
-3.	[Kruskal's Algorithm]()
+2.	[Prim's Algorithm](prims.c)
+3.	[Kruskal's Algorithm](kruskals.c)
 4.	[Djikstra's Algorithm]()
 5.	[Topological Sorting]()
 6.	[DFS](dfs.c)
