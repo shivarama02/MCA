@@ -36,10 +36,7 @@ fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
 
         // Populate the leaderboard
         data.forEach((contributor, index) => {
-            if (contributor.login === "yadhukrishnx") {
-                return;
-            }
-            else if (contributor.login === "jefintp") {
+            if (contributor.login === "jefintp") {
                 return;
             }
             const row = document.createElement('tr');
