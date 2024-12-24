@@ -8,10 +8,10 @@ Welcome to the **MCA Lab Repository** for the academic period **2024-2026**. Thi
 
 Explore the different sections of the repository by clicking the links below:
 
- **[Semester 1 (S1)](https://github.com/yadhukrishnx/MCA/tree/main/S1)**: First semester lab assignments 
-- **[Data Structures (DS)](https://github.com/yadhukrishnx/MCA/tree/main/S1/DS)**: Data Structures lab assignments
-- **[Python Programming](https://github.com/yadhukrishnx/MCA/tree/main/S1/PYTHON)**: Python lab assignments
-- **[Web Development](https://github.com/yadhukrishnx/MCA/tree/main/S1/WEB)**: Web development lab assignments
+ **[Semester 1 (S1)](https://github.com/deep-kH/MCA/tree/main/S1)**: First semester lab assignments 
+- **[Data Structures (DS)](https://github.com/deep-kH/MCA/tree/main/S1/DS)**: Data Structures lab assignments
+- **[Python Programming](https://github.com/deep-kH/MCA/tree/main/S1/PYTHON)**: Python lab assignments
+- **[Web Development](https://github.com/deep-kH/MCA/tree/main/S1/WEB)**: Web development lab assignments
 
 ---
 
@@ -19,8 +19,8 @@ Explore the different sections of the repository by clicking the links below:
 
 We’re committed to building a collaborative, welcoming community, and we’re thrilled to have each of you on board. Thank you all for your dedication and hard work in building and improving this project together! 😊
 
-<a href="https://github.com/yadhukrishnx /MCA/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yadhukrishnx/MCA" />
+<a href="https://github.com/deep-kH/MCA/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=deep-kH/MCA" />
 </a>
 
 ---
