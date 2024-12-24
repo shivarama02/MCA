@@ -4,10 +4,7 @@ fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
     .then(data => {
         contributorsContainer.innerHTML = '';
         data.forEach(contributor => {
-            if (contributor.login === "yadhukrishnx") {
-                return;
-            }
-            else if (contributor.login === "jefintp") {
+            if (contributor.login === "jefintp") {
                 return;
             }
             const contributorDiv = document.createElement('div');
