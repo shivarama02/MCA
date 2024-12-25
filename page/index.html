@@ -8,17 +8,42 @@
     <link rel="stylesheet" href="style.css">
     <script>
         // Christmas Music
-        let specific = document.querySelector(".wishes");
-        let audio = document.createElement("audio");
-        audio.src = "https://storage.googleapis.com/webai-54992.appspot.com/WeWishYouAMerryChristmas.mp3";
-        document.body.appendChild(audio);
+        document.addEventListener("DOMContentLoaded", () => {
+    let specific = document.querySelector(".wishes");
+    if (!specific) {
+        console.error("Element with class 'wishes' not found!");
+        return;
+    }
 
-        specific.onmouseover = () => {
-            audio.play();
+    let audio = document.createElement("audio");
+    audio.src = "https://storage.googleapis.com/webai-54992.appspot.com/WeWishYouAMerryChristmas.mp3";
+    audio.style.display = "none"; // Hide the audio element
+    document.body.appendChild(audio);
+
+    let isPlaying = false;
+
+    specific.onclick = () => {
+        if (!audio.src) {
+            console.error("Audio source is not valid!");
+            return;
         }
-        specific.onmouseout = () => {
+
+        if (isPlaying) {
             audio.pause();
+        } else {
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.catch((error) => {
+                    console.error("Audio playback failed:", error);
+                });
+            }
         }
+        isPlaying = !isPlaying;
+    };
+});
+
+
+
     </script>
     <style>
         body,
@@ -231,7 +256,7 @@
                     </g>
                     <foreignObject id="endMessage" x="0" y="550" width="800" height="250">
                         <span class="endMessage">
-                            Merry Christmas and Happy New Year
+                            Marry Christmas and Happy New Year
 
                         </span>
 
