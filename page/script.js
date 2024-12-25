@@ -1,10 +1,14 @@
+
 const contributorsContainer = document.getElementById('contributors-container');
 fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
     .then(response => response.json())
     .then(data => {
         contributorsContainer.innerHTML = '';
         data.forEach(contributor => {
-            if (contributor.login === "jefintp") {
+            if (contributor.login === "yadhukrishnx") {
+                return;
+            }
+            else if (contributor.login === "jefintp") {
                 return;
             }
             const contributorDiv = document.createElement('div');
@@ -36,7 +40,10 @@ fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
 
         // Populate the leaderboard
         data.forEach((contributor, index) => {
-            if (contributor.login === "jefintp") {
+            if (contributor.login === "yadhukrishnx") {
+                return;
+            }
+            else if (contributor.login === "jefintp") {
                 return;
             }
             const row = document.createElement('tr');
@@ -144,15 +151,4 @@ fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
     });
 
    
-    // Christmas Music
-    let specific = document.querySelector(".wishes");
-let audio = document.createElement("audio");
-audio.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
-document.body.appendChild(audio);
-
-specific.onmouseover = () => {
-  audio.play();
-}
-specific.onmouseout = () => {
-    audio.pause();
-}
+   

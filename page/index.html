@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCA Lab Repository (2024-2026)</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+         // Christmas Music
+    let specific = document.querySelector(".wishes");
+    let audio = document.createElement("audio");
+    audio.src = "https://storage.googleapis.com/webai-54992.appspot.com/WeWishYouAMerryChristmas.mp3";
+    document.body.appendChild(audio);
+    
+    specific.onmouseover = () => {
+      audio.play();
+    }
+    specific.onmouseout = () => {
+        audio.pause();
+    }
+    </script>
     <style>
         
 body,
@@ -103,6 +117,7 @@ html {
         
         
     </script>
+
 </head>
 <body>
     <div class="snow-container"></div>
@@ -181,8 +196,10 @@ html {
                 </g>
                 <foreignObject id="endMessage" x="0" y="550" width="800" height="250">
                   <span class="endMessage">
-                 Merry Christmas and Happy New Year 
+                 Marry Christmas and Happy New Year 
+                 
                   </span>
+             
                 </foreignObject>
               </svg>
               <div class="col-12 mt-5">
@@ -195,140 +212,8 @@ html {
 					</div>
 				</div>
 			</div>
+            
         </div>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        header {
-            background-color: #1c1c1c;
-            color: white;
-            padding: 1px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 15px 0;
-        }
-        nav a {
-            text-decoration: none;
-            color: #3a3a3a;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-        }
-        .directory {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .contributors-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .contributor {
-            text-align: center;
-            width: 120px;
-        }
-        .contributor img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-        .contributor a {
-            text-decoration: none;
-            color: #3a3a3a;
-            font-weight: bold;
-        }
-        .button-container {
-            margin: 20px 0;
-            text-align: center;
-        }
-        .folder {
-            text-align: center;
-            width: 120px;
-            cursor: pointer;
-        }
-        .folder img {
-            width: 100px;
-            height: 100px;
-        }
-        .folder a {
-            text-decoration: none;
-            color: #3a3a3a;
-            font-weight: bold;
-        }
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: 1px solid #ddd;
-            margin-top: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #3a3a3a;
-            color: white;
-            margin-top: 20px;
-        }
-        .leaderboard-container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        .leaderboard-header {
-            text-align: center;            margin-bottom: 20px;
-        }
-        .leaderboard-header h2 {
-            margin: 0;
-            color: #0077cc;
-        }
-        .leaderboard {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .leaderboard th, .leaderboard td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        .leaderboard th {
-            background-color: #0077cc;
-            color: white;
-        }
-        .leaderboard tbody tr:hover {
-            background-color: #f0f8ff;
-        }
-        .contributor-img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-    </style>
-</head>
-<body>
-    <header>
-
         <h2>MCA Lab Repository (2024-2026)</h2>
         <p> MCA Lab Assignments and Exercises</p>
         
@@ -346,19 +231,19 @@ html {
     <section id="directory">
         <h2>Repository Directory</h2>
         <div class="directory">
-            <a href="https://github.com/deep-kH/MCA/tree/main/S1/DS/readme.md">
+            <a href="https://github.com/deep-kH/MCA/tree/main/S1/DS">
             <div class="folder" >
                 <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Folder Icon">
                 <a>Data Structures</a>
             </div>
         </a>
-            <a href="https://github.com/deep-kH/MCA/tree/main/S1/PYTHON/readme.md">
+            <a href="https://github.com/deep-kH/MCA/tree/main/S1/PYTHON">
             <div class="folder" onclick="">
                 <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Folder Icon">
                 <a>Python Programming</a>
             </div>
         </a>
-        <a href="https://github.com/deep-kH/MCA/tree/main/S1/WEB/readme.md">
+        <a href="https://github.com/deep-kH/MCA/tree/main/S1/WEB">
             <div class="folder">
                 <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Folder Icon">
                 <a>Web Development</a>
@@ -377,7 +262,8 @@ html {
     <section id="contribute">
         <h2>🌟 How to Contribute</h2>
         <p>We welcome all types of contributions. Here’s how you can get started:</p>
-        <ol>            <li>Review our <a href="https://github.com/deep-kH/MCA/CONTRIBUTING.md">Contributing Guidelines</a>.</li>
+        <ol>
+            <li>Review our <a href="https://github.com/deep-kH/MCA/CONTRIBUTING.md">Contributing Guidelines</a>.</li>
             <li>Fork the repository and make a copy.</li>
             <li>Make your changes and test thoroughly.</li>
             <li>Create a pull request with a clear description.</li>
@@ -409,71 +295,10 @@ html {
     <footer>
         <p>© 2024 MCA Lab Repository. All rights reserved.</p>
     </footer>
-
+    
 
     <script src="script.js"></script>
     
-
-    <script>
-                const contributorsContainer = document.getElementById('contributors-container');
-        fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
-            .then(response => response.json())
-            .then(data => {
-                contributorsContainer.innerHTML = '';
-                data.forEach(contributor => {
-                    const contributorDiv = document.createElement('div');
-                    contributorDiv.className = 'contributor';
-                    contributorDiv.innerHTML = `
-                        <img src="${contributor.avatar_url}" alt="${contributor.login}">
-                        <a href="${contributor.html_url}" target="_blank">${contributor.login}</a>
-                    `;
-                    contributorsContainer.appendChild(contributorDiv);
-                });
-            })
-            .catch(error => {
-                contributorsContainer.innerHTML = '<p>Failed to load contributors.</p>';
-                console.error('Error fetching contributors:', error);
-            });
-
-            // leaderboard
-            const leaderboardTable = document.getElementById('leaderboard').querySelector('tbody');
-
-        // Fetch contributors from the GitHub API
-        fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
-            .then(response => response.json())
-            .then(data => {
-                // Sort contributors by contributions (highest first)
-                data.sort((a, b) => b.contributions - a.contributions);
-
-                // Clear the table body
-                leaderboardTable.innerHTML = '';
-
-                // Populate the leaderboard
-                data.forEach((contributor, index) => {
-                    if (contributor.login === "yadhukrishnx") {
-                        return;
-                    }
-                    const row = document.createElement('tr');
-                    row.innerHTML = `
-                        <td>${index + 1}</td>
-                        <td>
-                            <img src="${contributor.avatar_url}" alt="${contributor.login}" class="contributor-img">
-                            <a href="${contributor.html_url}" target="_blank">${contributor.login}</a>
-                        </td>
-                        <td>${contributor.contributions}</td>
-                    `;
-                    leaderboardTable.appendChild(row);
-                });
-            })
-            .catch(error => {
-                leaderboardTable.innerHTML = `
-                    <tr>
-                        <td colspan="3" style="text-align: center; color: red;">Failed to load data. Please try again later.</td>
-                    </tr>
-                `;
-                console.error('Error fetching contributors:', error);
-            });
-    </script>
-
+    
 </body>
 </html>
