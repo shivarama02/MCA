@@ -1,14 +1,11 @@
 
 const contributorsContainer = document.getElementById('contributors-container');
-fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
+fetch('https://api.github.com/repos/CET-MCA-26/MCA-Laboratory/contributors')
     .then(response => response.json())
     .then(data => {
         contributorsContainer.innerHTML = '';
         data.forEach(contributor => {
-            if (contributor.login === "yadhukrishnx") {
-                return;
-            }
-            else if (contributor.login === "jefintp") {
+            if (contributor.login === "jefintp") {
                 return;
             }
             const contributorDiv = document.createElement('div');
@@ -29,7 +26,7 @@ fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
     const leaderboardTable = document.getElementById('leaderboard').querySelector('tbody');
 
 // Fetch contributors from the GitHub API
-fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
+fetch('https://api.github.com/repos/CET-MCA-26/MCA-Laboratory/contributors')
     .then(response => response.json())
     .then(data => {
         // Sort contributors by contributions (highest first)
@@ -40,10 +37,7 @@ fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
 
         // Populate the leaderboard
         data.forEach((contributor, index) => {
-            if (contributor.login === "yadhukrishnx") {
-                return;
-            }
-            else if (contributor.login === "jefintp") {
+            if (contributor.login === "jefintp") {
                 return;
             }
             const row = document.createElement('tr');
