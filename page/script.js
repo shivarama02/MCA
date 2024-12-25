@@ -1,3 +1,4 @@
+
 const contributorsContainer = document.getElementById('contributors-container');
 fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
     .then(response => response.json())
@@ -150,15 +151,4 @@ fetch('https://api.github.com/repos/deep-kH/MCA/contributors')
     });
 
    
-    // Christmas Music
-    let specific = document.querySelector(".wishes");
-let audio = document.createElement("audio");
-audio.src = "https://storage.googleapis.com/webai-54992.appspot.com/WeWishYouAMerryChristmas.mp3";
-document.body.appendChild(audio);
-
-specific.onmouseover = () => {
-  audio.play();
-}
-specific.onmouseout = () => {
-    audio.pause();
-}
+   
