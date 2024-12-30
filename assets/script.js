@@ -8,9 +8,9 @@ fetch("https://api.github.com/repos/CET-MCA-26/MCA-Laboratory/contributors")
       if (contributor.login === "jefintp") {
         return;
       }
-      else if (contributor.login === "yadhukrishnx") {
-        return; // Skip the iteration for "jefintp"
-      }
+      // else if (contributor.login === "yadhukrishnx") {
+      //   return; // Skip the iteration for "jefintp"
+      // }
       const contributorDiv = document.createElement("div");
       contributorDiv.className = "contributor";
       contributorDiv.innerHTML = `
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function openModal(content) {
   let labContent = '';
   if (content === 'Python Lab Content') {
-      labContent = `
+    labContent = `
           <h3>Python Programming Lab</h3>
           <h4>Lab Cycle</h4>
           <ul>
@@ -197,6 +197,54 @@ function openModal(content) {
           </ul>
       `;
   }
+  else if (content === 'DS Lab Content') {
+    labContent = `
+          <h3>Python Programming Lab</h3>
+          <h4>Lab Cycle</h4>
+          <ul>
+            <li><a href="https://github.com/your-repo/array.c">Array</a></li>
+            <li><a href="https://github.com/your-repo/stack.c">Stack</a></li>
+            <li><a href="https://github.com/your-repo/queue.c">Queue</a></li>
+            <li><a href="https://github.com/your-repo/Circular(singly).c">Circular Queue</a></li>
+            <li><a href="https://github.com/your-repo/linkedlist.c">Linked List</a></li>
+            <li><a href="https://github.com/your-repo/Doubly_Linked_List.c">Doubly Linked List</a></li>
+            <li><a href="https://github.com/your-repo/Circular_DLL.c">Circular Linked List</a></li>
+            <li><a href="https://github.com/your-repo/Bitstringg.c">Set using Bit String</a></li>
+          </ul>
+          <h4>Lab Cycle 2</h4>
+          <ul>
+            <li><a href="https://github.com/your-repo/BST.c">Binary Search Tree</a></li>
+            <li><a href="https://github.com/your-repo/prims.c">Prim's Algorithm</a></li>
+            <li><a href="https://github.com/your-repo/kruskals.c">Kruskal's Algorithm</a></li>
+            <li><a href="https://github.com/your-repo/djikstra.c">Dijkstra's Algorithm</a></li>
+            <li><a href="https://github.com/your-repo/topological_sort.c">Topological Sorting</a></li>
+            <li><a href="https://github.com/your-repo/dfs.c">DFS</a></li>
+            <li><a href="https://github.com/your-repo/bfs.c">BFS</a></li>
+        </ul>
+        `;
+  }
+  else {
+    labContent = `
+          <h3>Python Programming Lab</h3>
+          <h4>Lab Cycle</h4>
+          <ul>
+          <li><a href="https://github.com/your-repo/Resume">Resume</a></li>
+            <li><a href="https://github.com/your-repo/InternalLink">Internal Links</a></li>
+            <li><a href="https://github.com/your-repo/ApplicationForm">Job Application</a></li>
+            <li><a href="https://github.com/your-repo/Frameset">Frameset</a></li>
+            <li><a href="https://github.com/your-repo/Css">CSS</a></li>
+            <li><a href="https://github.com/your-repo/RegistrationForm">Registration Form</a></li>
+            <li><a href="https://github.com/your-repo/factorial.php">Factorial</a></li>
+            <li><a href="https://github.com/your-repo/signup">Login Form</a></li>
+            <li><a href="https://github.com/your-repo/JavaScriptFunctions">JavaScript Functions</a></li>
+            <li><a href="https://github.com/your-repo/ChangeBackgroundColor">JavaScript: Change Background Color</a></li>
+            <li><a href="https://github.com/your-repo/FormValidation">Form Validation</a></li>
+            <li><a href="https://github.com/your-repo/ChangeImageOnHover">JavaScript: Change Image on Hover</a></li>
+            <li><a href="https://github.com/your-repo/StudentRegistration">Student Registration</a></li>
+            </ul>
+
+          `;
+  }
   document.getElementById('modal-body').innerHTML = labContent;
   document.getElementById('modal').style.display = 'flex';
 }
@@ -205,11 +253,11 @@ function closeModal() {
   document.getElementById('modal').style.display = 'none';
 }
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   const navbar = document.getElementById('navbar');
   if (window.scrollY > 100) {
-      navbar.classList.add('sticky');
+    navbar.classList.add('sticky');
   } else {
-      navbar.classList.remove('sticky');
+    navbar.classList.remove('sticky');
   }
 });
