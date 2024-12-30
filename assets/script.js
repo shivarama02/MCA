@@ -8,9 +8,7 @@ fetch("https://api.github.com/repos/CET-MCA-26/MCA-Laboratory/contributors")
       if (contributor.login === "jefintp") {
         return;
       }
-      // else if (contributor.login === "yadhukrishnx") {
-      //   return; // Skip the iteration for "jefintp"
-      // }
+      
       const contributorDiv = document.createElement("div");
       contributorDiv.className = "contributor";
       contributorDiv.innerHTML = `
@@ -25,51 +23,51 @@ fetch("https://api.github.com/repos/CET-MCA-26/MCA-Laboratory/contributors")
     console.error("Error fetching contributors:", error);
   });
 
-// leaderboard
-const leaderboardTable = document
-  .getElementById("leaderboard")
-  .querySelector("tbody");
+// // leaderboard
+// const leaderboardTable = document
+//   .getElementById("leaderboard")
+//   .querySelector("tbody");
 
-// Fetch contributors from the GitHub API
-fetch("https://api.github.com/repos/CET-MCA-26/MCA-Laboratory/contributors")
-  .then((response) => response.json())
-  .then((data) => {
-    // Sort contributors by contributions (highest first)
-    data.sort((a, b) => b.contributions - a.contributions);
+// // Fetch contributors from the GitHub API
+// fetch("https://api.github.com/repos/CET-MCA-26/MCA-Laboratory/contributors")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     // Sort contributors by contributions (highest first)
+//     data.sort((a, b) => b.contributions - a.contributions);
 
-    // Clear the table body
-    leaderboardTable.innerHTML = "";
+//     // Clear the table body
+//     leaderboardTable.innerHTML = "";
 
-    // Populate the leaderboard
-    let rank = 1; // Separate counter for rank
-    data.forEach((contributor) => {
-      if (contributor.login === "jefintp") {
-        return; // Skip the iteration for "jefintp"
-      }
-      else if (contributor.login === "yadhukrishnx") {
-        return; // Skip the iteration for "jefintp"
-      }
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td>${rank}</td> <!-- Use the separate rank counter -->
-        <td>
-            <img src="${contributor.avatar_url}" alt="${contributor.login}" class="contributor-img">
-            <a href="${contributor.html_url}" target="_blank">${contributor.login}</a>
-        </td>
-        <td>${contributor.contributions}</td>
-    `;
-      leaderboardTable.appendChild(row);
-      rank++; // Increment the rank counter only when adding a contributor
-    });
-  })
-  .catch((error) => {
-    leaderboardTable.innerHTML = `
-            <tr>
-                <td colspan="3" style="text-align: center; color: red;">Failed to load data. Please try again later.</td>
-            </tr>
-        `;
-    console.error("Error fetching contributors:", error);
-  });
+//     // Populate the leaderboard
+//     let rank = 1; // Separate counter for rank
+//     data.forEach((contributor) => {
+//       if (contributor.login === "jefintp") {
+//         return; // Skip the iteration for "jefintp"
+//       }
+//       else if (contributor.login === "yadhukrishnx") {
+//         return; // Skip the iteration for "jefintp"
+//       }
+//       const row = document.createElement("tr");
+//       row.innerHTML = `
+//         <td>${rank}</td> <!-- Use the separate rank counter -->
+//         <td>
+//             <img src="${contributor.avatar_url}" alt="${contributor.login}" class="contributor-img">
+//             <a href="${contributor.html_url}" target="_blank">${contributor.login}</a>
+//         </td>
+//         <td>${contributor.contributions}</td>
+//     `;
+//       leaderboardTable.appendChild(row);
+//       rank++; // Increment the rank counter only when adding a contributor
+//     });
+//   })
+//   .catch((error) => {
+//     leaderboardTable.innerHTML = `
+//             <tr>
+//                 <td colspan="3" style="text-align: center; color: red;">Failed to load data. Please try again later.</td>
+//             </tr>
+//         `;
+//     console.error("Error fetching contributors:", error);
+//   });
 
 document.addEventListener("DOMContentLoaded", function () {
   const snowContainer = document.querySelector(".snow-container");
@@ -202,24 +200,24 @@ function openModal(content) {
           <h3>Python Programming Lab</h3>
           <h4>Lab Cycle</h4>
           <ul>
-            <li><a href="https://github.com/your-repo/array.c">Array</a></li>
-            <li><a href="https://github.com/your-repo/stack.c">Stack</a></li>
-            <li><a href="https://github.com/your-repo/queue.c">Queue</a></li>
-            <li><a href="https://github.com/your-repo/Circular(singly).c">Circular Queue</a></li>
-            <li><a href="https://github.com/your-repo/linkedlist.c">Linked List</a></li>
-            <li><a href="https://github.com/your-repo/Doubly_Linked_List.c">Doubly Linked List</a></li>
-            <li><a href="https://github.com/your-repo/Circular_DLL.c">Circular Linked List</a></li>
-            <li><a href="https://github.com/your-repo/Bitstringg.c">Set using Bit String</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/array.c">Array</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/stack.c">Stack</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/queue.c">Queue</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/Circular(singly).c">Circular Queue</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/linkedlist.c">Linked List</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/Doubly_Linked_List.c">Doubly Linked List</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/Circular_DLL.c">Circular Linked List</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/Bitstringg.c">Set using Bit String</a></li>
           </ul>
           <h4>Lab Cycle 2</h4>
           <ul>
-            <li><a href="https://github.com/your-repo/BST.c">Binary Search Tree</a></li>
-            <li><a href="https://github.com/your-repo/prims.c">Prim's Algorithm</a></li>
-            <li><a href="https://github.com/your-repo/kruskals.c">Kruskal's Algorithm</a></li>
-            <li><a href="https://github.com/your-repo/djikstra.c">Dijkstra's Algorithm</a></li>
-            <li><a href="https://github.com/your-repo/topological_sort.c">Topological Sorting</a></li>
-            <li><a href="https://github.com/your-repo/dfs.c">DFS</a></li>
-            <li><a href="https://github.com/your-repo/bfs.c">BFS</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/BST.c">Binary Search Tree</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/prims.c">Prim's Algorithm</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/kruskals.c">Kruskal's Algorithm</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/djikstra.c">Dijkstra's Algorithm</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/topological_sort.c">Topological Sorting</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/dfs.c">DFS</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/bfs.c">BFS</a></li>
         </ul>
         `;
   }
@@ -228,19 +226,19 @@ function openModal(content) {
           <h3>Python Programming Lab</h3>
           <h4>Lab Cycle</h4>
           <ul>
-          <li><a href="https://github.com/your-repo/Resume">Resume</a></li>
-            <li><a href="https://github.com/your-repo/InternalLink">Internal Links</a></li>
-            <li><a href="https://github.com/your-repo/ApplicationForm">Job Application</a></li>
-            <li><a href="https://github.com/your-repo/Frameset">Frameset</a></li>
-            <li><a href="https://github.com/your-repo/Css">CSS</a></li>
-            <li><a href="https://github.com/your-repo/RegistrationForm">Registration Form</a></li>
-            <li><a href="https://github.com/your-repo/factorial.php">Factorial</a></li>
-            <li><a href="https://github.com/your-repo/signup">Login Form</a></li>
-            <li><a href="https://github.com/your-repo/JavaScriptFunctions">JavaScript Functions</a></li>
-            <li><a href="https://github.com/your-repo/ChangeBackgroundColor">JavaScript: Change Background Color</a></li>
-            <li><a href="https://github.com/your-repo/FormValidation">Form Validation</a></li>
-            <li><a href="https://github.com/your-repo/ChangeImageOnHover">JavaScript: Change Image on Hover</a></li>
-            <li><a href="https://github.com/your-repo/StudentRegistration">Student Registration</a></li>
+          <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/Resume">Resume</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/InternalLink">Internal Links</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/ApplicationForm">Job Application</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/Frameset">Frameset</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/Css">CSS</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/RegistrationForm">Registration Form</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/factorial.php">Factorial</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/signup">Login Form</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/JavaScriptFunctions">JavaScript Functions</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/ChangeBackgroundColor">JavaScript: Change Background Color</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/FormValidation">Form Validation</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/ChangeImageOnHover">JavaScript: Change Image on Hover</a></li>
+            <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/StudentRegistration">Student Registration</a></li>
             </ul>
 
           `;
