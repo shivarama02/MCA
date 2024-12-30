@@ -337,7 +337,7 @@ svg{
 }
 
 .modal-content {
-    background: white;
+    background: rgba(255, 255, 255, 0.781);
     border-radius: 10px;
     padding: 20px;
     width: 80%;
@@ -380,6 +380,9 @@ svg{
     max-width: 300px;
 }
 
+a{
+    color: #343c53;
+}
 
 
 .list-item:last-child {
