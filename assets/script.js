@@ -159,7 +159,7 @@ function openModal(content) {
   let labContent = '';
   if (content === 'Python Lab Content') {
     labContent = `
-          <h3>Python Programming Lab</h3>
+          <h3>PYTHON PROGRAMMING LAB</h3>
           <h4>Lab Cycle</h4>
           <ul>
               <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/edit/main/S1/PYTHON/01_area_perimeter_circle.py">Area and Perimeter of a Circle</a></li>
@@ -197,7 +197,7 @@ function openModal(content) {
   }
   else if (content === 'DS Lab Content') {
     labContent = `
-          <h3>Python Programming Lab</h3>
+          <h3>ADVANCED DATA STRUCTURE LAB</h3>
           <h4>Lab Cycle</h4>
           <ul>
             <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/blob/main/S1/DS/array.c">Array</a></li>
@@ -223,7 +223,7 @@ function openModal(content) {
   }
   else {
     labContent = `
-          <h3>Python Programming Lab</h3>
+          <h3>WEB PROGRAMMING LAB</h3>
           <h4>Lab Cycle</h4>
           <ul>
           <li><a href="https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/Resume">Resume</a></li>
