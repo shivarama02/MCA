@@ -1,4 +1,4 @@
-# MCA Lab Repository (2024-2026) [Click Here](https://cet-mca-26.github.io/MCA-Laboratory/)
+# MCA Lab Repository (2024-2026) [Click Here](https://cetmca26.github.io/MCA-Laboratory/)
 
 Welcome to the **MCA Lab Repository** for the academic period **2024-2026**. This repository is a comprehensive collection of all the lab assignments and exercises for the **MCA (Master of Computer Applications)** program. We’re excited to have you as part of our collaborative learning journey!
 
@@ -9,9 +9,9 @@ Welcome to the **MCA Lab Repository** for the academic period **2024-2026**. Thi
 Explore the different sections of the repository by clicking the links below:
 
  **[Semester 1 (S1)](https://github.com/deep-kH/MCA/tree/main/S1)**: First semester lab assignments 
-- **[Data Structures (DS)](https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/DS/Readme.md)**: Data Structures lab assignments
-- **[Python Programming](https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/PYTHON/Readme.md)**: Python lab assignments
-- **[Web Development](https://github.com/CET-MCA-26/MCA-Laboratory/tree/main/S1/WEB/Readme.md)**: Web development lab assignments
+- **[Data Structures (DS)](https://github.com/cetmca26/MCA-Laboratory/tree/main/S1/DS/Readme.md)**: Data Structures lab assignments
+- **[Python Programming](https://github.com/cetmca26/MCA-Laboratory/tree/main/S1/PYTHON/Readme.md)**: Python lab assignments
+- **[Web Development](https://github.com/cetmca26/MCA-Laboratory/tree/main/S1/WEB/Readme.md)**: Web development lab assignments
 
 ---
 
@@ -19,8 +19,8 @@ Explore the different sections of the repository by clicking the links below:
 
 We’re committed to building a collaborative, welcoming community, and we’re thrilled to have each of you on board. Thank you all for your dedication and hard work in building and improving this project together! 😊
 
-<a href="https://github.com/CET-MCA-26/MCA-Laboratory/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=CET-MCA-26/MCA-Laboratory" />
+<a href="https://github.com/cetmca26/MCA-Laboratory/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=cetmca26/MCA-Laboratory" />
 </a>
 
 ---
