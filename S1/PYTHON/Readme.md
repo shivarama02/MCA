@@ -30,7 +30,7 @@ Lab Cycle
 26.	[Bank account (Constructor and Methods)](26.bank.py)
 27.	[Time (Private attributes, Overloading)](27.TimeOverloading.py)
 28.	[Publisher, Book, Python (Base class constructor invocation, method overriding)](28.Publisher.py)
-29.	[Read a file into List](29.filehandling)
+29.	[Read a file into List](29.Read-row-list)
 30.	[Copy odd lines of one file to another](30.Odd-Read)
 31.	[Read specific columns of a given CSV file and print their contents](31.ReadColumns)
 32.	[Write a Python dictionary to a CSV file, read the CSV and display its content](32.dictToCsv)
