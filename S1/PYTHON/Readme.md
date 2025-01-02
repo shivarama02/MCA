@@ -31,4 +31,4 @@ Lab Cycle
 27.	[Copy odd lines of one file to another](27.Odd-Read)
 28.	[Read each row from a given csv file and print it as a list of strings]()
 29.	[Read specific columns of a given CSV file and print their contents](29.ReadColumns)
-30.	[Write a Python dictionary to a CSV file, read the CSV and display its content]()
+30.	[Write a Python dictionary to a CSV file, read the CSV and display its content](30.DictToCsv)
