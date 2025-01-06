@@ -15,7 +15,7 @@ Lab Cycle
 11.	[Exchange first and last characters in a string](11_Stringechange.py)
 12.	[Display first and last colours from a list of comma-separated colour names](12.list.py)
 13.	[Create a single string from two strings, swapping the character at position 1](13.singlestring.py)
-14.	[Sort dictionary (ascending and descending)](14.dict.py)
+14.	[Sort dictionary (ascending and descending)](14_dict.py)
 15.	[Merge two dictionaries](15.merge.py)
 16.	[GCD of 2 numbers](16.GCD.py)
 17.	[From a list, create a list removing all even numbers](17.evenlist)
