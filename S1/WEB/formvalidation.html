@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .error{
+        color: red;
+    }
+    
+</style>
+<body>
+    <form action="" id="myform">
+        <label for="username" for;="">Username</label><br>
+        <input type="text" name="username" id="username"><br>
+        <span id="username_error" class="error"></span><br>
+        <label for="email">Email Address</label><br>
+        <input type="text" name="email" id="email" ,class="email"><br>
+        <span id="email_error" class="error"></span><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password"><br>
+        <span id="password_error" class="error"></span><br>
+       <input type="submit" value="Submit"><br>
+    </form>
+    <script>
+        document.getElementById("myform").addEventListener('submit',function(event){
+            event.preventDefault();
+            let isValid = true;
+            const username = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            const usernameregex = /^[a-zA-Z0-9]{5,15}$/;
+            const emailregex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const passwordregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,20}$/;
+
+            if(!usernameregex.test(username)){
+                document.getElementById("username_error").textContent="Username Must be 5 - 15 Characters and Doesnt Contain Special Characters";
+                isValid = false;
+            }else{
+                document.getElementById("username_error").textContent="";
+
+            }
+            if(!emailregex.test(email)){
+                document.getElementById("email_error").textContent="Email Not Valid";
+                isValid = false;
+            }
+            else{
+                document.getElementById("email_error").textContent="";
+            }
+            if(!passwordregex.test(password)){
+                document.getElementById("password_error").textContent="Password Not Valid";
+                isValid = false;
+            }
+            else{
+                document.getElementById("password_error").textContent="";
+                
+            }
+            if(isValid){
+                document.getElementById("username").classList.add("verified");
+                alert("Form Submitted Successfully ! ");
+                this.submit();
+            }
+        });
+    </script>
+</body>
+</html>
