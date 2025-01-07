@@ -1,4 +1,3 @@
-// import header files
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,58 +12,6 @@ typedef struct Tree_Node
 // Declaring variables
 node *root = NULL, *new, *temp, *prt;
 int lim;
-
-// creating a Binary Search Tree
-void Create()
-{
-    // User input for limit
-    printf("Enter limit of your Tree : ");
-    scanf("%d", &lim);
-
-    // insertion of Nodes
-    while (lim > 0)
-    {
-        {
-            // Memory allocation
-            new = (node *)malloc(sizeof(node));
-            new->Rchild = NULL;
-            new->Lchild = NULL;
-
-            printf("Enter your data : ");
-            scanf("%d", &new->data);
-
-            // If Root is NULL
-            if (root == NULL)
-                root = new;
-
-            else
-            {
-                temp = root;
-
-                // Finding where to Insert the node
-                while (temp != NULL)
-                {
-                    prt = temp;
-                    if (temp->data < new->data)
-                        temp = temp->Rchild;
-
-                    else
-                        temp = temp->Lchild;
-                }
-
-                // Insert the node
-                if (new->data < prt->data)
-                    prt->Lchild = new;
-                else
-                    prt->Rchild = new;
-            }
-        }
-        lim--;
-    }
-}
-
-// traversing a Binary Search Tree
-// 3 Types : Pre Order, Post Order, In order
 
 void in_order(node *root)
 {
@@ -164,10 +111,6 @@ node *successor(int ele)
     return ptr1;
 }
 
-void display()
-{
-}
-
 node *paerentof(int dat)
 {
     node *pnt = search(dat);
@@ -193,52 +136,24 @@ void Delete()
     scanf("%d", &s);
     dell = search(s);
 
-    // if (paerentof(s) == NULL) // If To be deleted Node is Root Node!
-    // {
-    //     if (dell->Rchild != NULL)
-    //     {
-    //         temp = successor(s);
-    //         prt = paerentof(temp->data);
-    //         if (temp->Rchild != NULL)
-    //             prt->Lchild = temp->Rchild;
-    //         else
-    //             prt->Lchild = NULL;
-    //         root = temp;
-    //         root->Lchild = dell->Lchild;
-    //         if (paerentof(temp->data) == root)
-    //         {
-    //             temp->Rchild = temp->Rchild;
-    //         }
-    //         else
-    //         {
-    //             if (temp->Rchild != NULL)
-    //                 prt->Lchild = new->Rchild;
-    //             else
-    //                 prt->Lchild = NULL;
-    //             root->Rchild = dell->Rchild;
-    //         }
-    //     }
-    //     else
-    //         root = root->Lchild;
-    // }
-
     if (paerentof(s) == NULL) // If To be deleted Node is Root Node!
     {
         if (dell->Rchild != NULL)
         {
             temp = successor(root->data);
             new = paerentof(temp->data);
-            if (paerentof(temp->data) == root)
+            if (paerentof(temp->data) != root)
             {
-                temp->Rchild = temp->Rchild;
-            }
-            else
-            { // Can Be Replaced as new->Rchild = temp->Rchild
+                // Can Be Replaced as new->Rchild = temp->Rchild
                 if (temp->Rchild != NULL)
                     new->Rchild = temp->Rchild;
                 else
                     new->Rchild = NULL;
                 temp->Rchild = root->Rchild;
+            }
+            else
+            {
+                root = root->Rchild;
             }
             root = temp;
             root->Lchild = dell->Lchild;
@@ -307,15 +222,12 @@ void main()
     int choice, trav, s;
     while (1)
     {
-        printf("\n0. Exit\n1. Create\n2. Traversals\n3. Insert\n4. Search\n5. Delete\nChoose : \t");
+        printf("\n0. Exit\n2. Traversals\n3. Insert\n4. Search\n5. Delete\nChoose : \t");
         scanf("%d", &choice);
         if (choice == 0)
             break;
         switch (choice)
         {
-        case 1:
-            Create();
-            break;
         case 2:
             printf("Which Traversal : In(1)\t Post(2)\t Pre(3)\n");
             scanf("%d", &trav);
