@@ -369,12 +369,8 @@ svg {
 }
 
 .modal-content {
-<<<<<<< HEAD
-    background: rgba(255, 255, 255, 0.781);
-=======
     background: rgba(214, 214, 214, 0.925);
     color: #000000;
->>>>>>> main
     border-radius: 10px;
     padding: 20px;
     width: 80%;
@@ -417,13 +413,8 @@ svg {
     max-width: 300px;
 }
 
-<<<<<<< HEAD
-a {
-    color: #343c53;
-=======
 a{
     color:#26303a;
->>>>>>> main
 }
 
 
