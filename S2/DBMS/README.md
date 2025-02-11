@@ -23,16 +23,6 @@ After completing the course, students will be able to:
 - **CO 5**: Understand the basic storage architecture of distributed file systems.
 - **CO 6**: Design and deploy NoSQL databases with real-time requirements.
 
-### Assessment Pattern
-| Bloom’s Category | Continuous Assessment Tests | End Semester Examination |
-|------------------|-----------------------------|--------------------------|
-| Remember (K1)    |                             |                          |
-| Understand (K2)  |                             |                          |
-| Apply (K3)       | 10                          | 10                       |
-| Analyse (K4)     | 10                          | 10                       |
-| Evaluate (K5)    | 10                          | 10                       |
-| Create (K6)      | 20                          | 20                       |
-
 ### Mark Distribution
 | Total Marks | CIE | ESE | ESE Duration |
 |-------------|-----|-----|--------------|
